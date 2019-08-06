@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Fralysis’s documentation! &#8212; Fralysis V1.015 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-fralysis-s-documentation">
+<h1>Welcome to Fralysis’s documentation!<a class="headerlink" href="#welcome-to-fralysis-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-Fralysis.AnalyseDream">
+<span id="fralysis-analysedream-is-essential"></span><h1>Fralysis.AnalyseDream is_essential<a class="headerlink" href="#module-Fralysis.AnalyseDream" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Fralysis.AnalyseDream.AnalyseDream">
+<em class="property">class </em><code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">AnalyseDream</code><span class="sig-paren">(</span><em>dream: Fralysis.Dream.Dream = None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.AnalyseDream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class which takes a user’s message and classifies dream features</p>
+<dl class="method">
+<dt id="Fralysis.AnalyseDream.AnalyseDream.opinions">
+<code class="descname">opinions</code><span class="sig-paren">(</span><em>feedback: spacy.tokens.doc.Doc</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.AnalyseDream.opinions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take a users message and get features</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>feedback</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.AnalyseDream.AnalyseDream.set_subject_of_dream">
+<code class="descname">set_subject_of_dream</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.AnalyseDream.set_subject_of_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a subject of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.AnalyseDream.AnalyseDream.topic_rating_dirobj_description_of">
+<code class="descname">topic_rating_dirobj_description_of</code><span class="sig-paren">(</span><em>tokens: List[spacy.tokens.token.Token]</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.AnalyseDream.topic_rating_dirobj_description_of" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identify a direct object of a dream. Attach a symbol. Provide a description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tokens</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Fralysis.AnalyseDream.combine_ratings">
+<code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">combine_ratings</code><span class="sig-paren">(</span><em>tokens</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.combine_ratings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply any modifying tokens to original adjective rating</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tokens</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Fralysis.AnalyseDream.essential_tokens">
+<code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">essential_tokens</code><span class="sig-paren">(</span><em>tokens</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.essential_tokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of essential tokens</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tokens</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Fralysis.AnalyseDream.is_essential">
+<code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">is_essential</code><span class="sig-paren">(</span><em>token: spacy.tokens.token.Token</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#Fralysis.AnalyseDream.is_essential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether a token has a topic or rating, or modifies the rating</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>token</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Fralysis.AnalyseDream.match_dreams">
+<code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">match_dreams</code><span class="sig-paren">(</span><em>dreams: [&lt;class 'Fralysis.Dream.Dream'&gt;]</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.AnalyseDream.match_dreams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply any modifying tokens to original adjective rating</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dreams</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="fralysis-messagetypeanalysis-messagetypeanalysis">
+<h1>Fralysis.MessageTypeAnalysis MessageTypeAnalysis<a class="headerlink" href="#fralysis-messagetypeanalysis-messagetypeanalysis" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Fralysis.MessageTypeAnalysis.MessageTypeAnalysis">
+<em class="property">class </em><code class="descclassname">Fralysis.MessageTypeAnalysis.</code><code class="descname">MessageTypeAnalysis</code><span class="sig-paren">(</span><em>message: str = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.MessageTypeAnalysis.MessageTypeAnalysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to identify whether a users input contains a name, dream or something irrelevant</p>
+<dl class="method">
+<dt id="Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.check_token">
+<code class="descname">check_token</code><span class="sig-paren">(</span><em>sentence</em>, <em>feature=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.check_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if required tokens present</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sentence</strong> – </p></li>
+<li><p><strong>feature</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of valid tokens</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_dream">
+<code class="descname">is_dream</code><span class="sig-paren">(</span><em>feature=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if user input contains features of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>feature</strong> – </p>
+</dd>
+<dt class="field-even">Return SpaCy Doc</dt>
+<dd class="field-even"><p>if user message contains dream features</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_name">
+<code class="descname">is_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if user input contains their name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_option">
+<code class="descname">is_option</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.MessageTypeAnalysis.MessageTypeAnalysis.is_option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if user input contains a pre-analysis option</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt>
+<em class="property">class </em><code class="descclassname">Fralysis.AnalyseDream.</code><code class="descname">AnalyseDream</code><span class="sig-paren">(</span><em>dream: Fralysis.Dream.Dream = None</em><span class="sig-paren">)</span></dt>
+<dd><p>Class which takes a user’s message and classifies dream features</p>
+<dl class="method">
+<dt>
+<code class="descname">opinions</code><span class="sig-paren">(</span><em>feedback: spacy.tokens.doc.Doc</em><span class="sig-paren">)</span></dt>
+<dd><p>Take a users message and get features</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>feedback</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">set_subject_of_dream</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Set a subject of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">topic_rating_dirobj_description_of</code><span class="sig-paren">(</span><em>tokens: List[spacy.tokens.token.Token]</em><span class="sig-paren">)</span></dt>
+<dd><p>Identify a direct object of a dream. Attach a symbol. Provide a description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tokens</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.Client.Client">
+<em class="property">class </em><code class="descclassname">Fralysis.Client.</code><code class="descname">Client</code><span class="sig-paren">(</span><em>name: str = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Client.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to represent a therapists client</p>
+<dl class="method">
+<dt id="Fralysis.Client.Client.add_dream">
+<code class="descname">add_dream</code><span class="sig-paren">(</span><em>dream: Fralysis.Dream.Dream = None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Client.Client.add_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append a client’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dream</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Client.Client.get_dream">
+<code class="descname">get_dream</code><span class="sig-paren">(</span><em>index: int = 0</em><span class="sig-paren">)</span> &#x2192; Fralysis.Dream.Dream<a class="headerlink" href="#Fralysis.Client.Client.get_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a client’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>index</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Client.Client.get_dreams">
+<code class="descname">get_dreams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Client.Client.get_dreams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a client’s list of dreams</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dreams</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Client.Client.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#Fralysis.Client.Client.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a clients identifier (their name)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>client’s name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Client.Client.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Client.Client.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a clients name (pseudonym, which is a proper noun)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.Conversation.Conversation">
+<em class="property">class </em><code class="descclassname">Fralysis.Conversation.</code><code class="descname">Conversation</code><span class="sig-paren">(</span><em>in_out: Fralysis.InputOutput.InputOutput</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles the chat dynamic with user</p>
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_analysis">
+<code class="descname">get_analysis</code><span class="sig-paren">(</span><em>dream: Fralysis.Dream.Dream</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get analysis of user’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>analysis of dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_combined_analysis">
+<code class="descname">get_combined_analysis</code><span class="sig-paren">(</span><em>matched_topics: Fralysis.Constants.Topic</em>, <em>matched_rating: Fralysis.Constants.Rating</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_combined_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get comparison of user’s dreams</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>matched_topics</strong> – </p></li>
+<li><p><strong>matched_rating</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>success of analysis</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_dream">
+<code class="descname">get_dream</code><span class="sig-paren">(</span><em>post_opt: Fralysis.Constants.PostOption = None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends messages to user to get details on their dream.
+Details invole the subject, topic and rating of the dream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>post_opt</strong> (<em>PostOption</em>) – whether they are providing their first dream, a further dream, or more information on a dream</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>client’s dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends messages to user to get their name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>client’s name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_post_analysis_option">
+<code class="descname">get_post_analysis_option</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_post_analysis_option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get options from user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>user’s option</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_rating">
+<code class="descname">get_rating</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_rating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get sentiment of user’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>rating of dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_subject">
+<code class="descname">get_subject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get subject of user’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>subject of dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Conversation.Conversation.get_topic">
+<code class="descname">get_topic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Conversation.Conversation.get_topic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get symbol of user’s dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>topic of dream</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.Dream.Dream">
+<em class="property">class </em><code class="descclassname">Fralysis.Dream.</code><code class="descname">Dream</code><span class="sig-paren">(</span><em>message: spacy.tokens.doc.Doc = None</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to represent and hold information on a users dream</p>
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.add_description">
+<code class="descname">add_description</code><span class="sig-paren">(</span><em>desc: str</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.add_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Describe the dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>description</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.add_message">
+<code class="descname">add_message</code><span class="sig-paren">(</span><em>msg: spacy.tokens.doc.Doc</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.add_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add message to describe dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.add_rating">
+<code class="descname">add_rating</code><span class="sig-paren">(</span><em>rating: Fralysis.Constants.Rating</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.add_rating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the sentiment of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Rating</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.add_topic">
+<code class="descname">add_topic</code><span class="sig-paren">(</span><em>topic: Fralysis.Constants.Topic</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.add_topic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add symbolisms of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Topic</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_descriptions">
+<code class="descname">get_descriptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_descriptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the description of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return description</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_direct_object">
+<code class="descname">get_direct_object</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_direct_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the direct object of the dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dream’s direct object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_latest_message">
+<code class="descname">get_latest_message</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_latest_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the latest message provided from the user about this dream
+:return: SpaCy Doc</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_messages">
+<code class="descname">get_messages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_messages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of messages used to describe dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_ratings">
+<code class="descname">get_ratings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_ratings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the sentiment of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return sentiment</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_subject">
+<code class="descname">get_subject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get subject of dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dream’s subject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.get_topics">
+<code class="descname">get_topics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.get_topics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the symbolism of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return list of symbols</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.remove_duplicates">
+<code class="descname">remove_duplicates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.remove_duplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove duplicates in the dream</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.set_direct_object">
+<code class="descname">set_direct_object</code><span class="sig-paren">(</span><em>direct_object</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.set_direct_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the direct object of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>object string</strong> (<em>direct</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Dream.Dream.set_subject">
+<code class="descname">set_subject</code><span class="sig-paren">(</span><em>subject</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Dream.Dream.set_subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the subject of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Subject</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.DreamValidator.DreamValidator">
+<em class="property">class </em><code class="descclassname">Fralysis.DreamValidator.</code><code class="descname">DreamValidator</code><span class="sig-paren">(</span><em>dream: Fralysis.Dream.Dream</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to validate whether a dream has all required features for interpretation</p>
+<dl class="method">
+<dt id="Fralysis.DreamValidator.DreamValidator.has_rating">
+<code class="descname">has_rating</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator.has_rating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if dream has a sentiment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>sentiment found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.DreamValidator.DreamValidator.has_subject">
+<code class="descname">has_subject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator.has_subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if dream has a subject</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>subject found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.DreamValidator.DreamValidator.has_topic">
+<code class="descname">has_topic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator.has_topic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if dream has a symbol</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>symbol found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.DreamValidator.DreamValidator.is_valid">
+<code class="descname">is_valid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator.is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether there are outstanding features in dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dream vaidity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.DreamValidator.DreamValidator.outstanding_features">
+<code class="descname">outstanding_features</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.DreamValidator.DreamValidator.outstanding_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of features missing from the dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of missing features</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.InputOutput.InputOutput">
+<em class="property">class </em><code class="descclassname">Fralysis.InputOutput.</code><code class="descname">InputOutput</code><span class="sig-paren">(</span><em>interface_type: str = 'simple'</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.InputOutput.InputOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to handle input and output</p>
+<dl class="method">
+<dt id="Fralysis.InputOutput.InputOutput.read_message">
+<code class="descname">read_message</code><span class="sig-paren">(</span><em>prompt='analysis&gt;'</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.InputOutput.InputOutput.read_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a users message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prompt</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>user’s message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.InputOutput.InputOutput.write_message">
+<code class="descname">write_message</code><span class="sig-paren">(</span><em>message</em>, <em>prompt='analysis&gt;'</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.InputOutput.InputOutput.write_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write chatbot and users message to inteface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> – </p></li>
+<li><p><strong>prompt</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.Interview.Interview">
+<em class="property">class </em><code class="descclassname">Fralysis.Interview.</code><code class="descname">Interview</code><span class="sig-paren">(</span><em>client: Fralysis.Client.Client</em>, <em>in_out: Fralysis.InputOutput.InputOutput</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Interview.Interview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to Represents therapist’s thought process and required proceedure to get to next checkpoint</p>
+<dl class="method">
+<dt id="Fralysis.Interview.Interview.ask_for_dream">
+<code class="descname">ask_for_dream</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Interview.Interview.ask_for_dream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves complete dream from user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Interview.Interview.ask_for_name">
+<code class="descname">ask_for_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Interview.Interview.ask_for_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves name from user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Interview.Interview.give_analysis">
+<code class="descname">give_analysis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Interview.Interview.give_analysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives feedback to user about their dreams</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Interview.Interview.provide_options">
+<code class="descname">provide_options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Interview.Interview.provide_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves pre-analysis option from user</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt>
+<em class="property">class </em><code class="descclassname">Fralysis.MessageTypeAnalysis.</code><code class="descname">MessageTypeAnalysis</code><span class="sig-paren">(</span><em>message: str = ''</em><span class="sig-paren">)</span></dt>
+<dd><p>Class to identify whether a users input contains a name, dream or something irrelevant</p>
+<dl class="method">
+<dt>
+<code class="descname">check_token</code><span class="sig-paren">(</span><em>sentence</em>, <em>feature=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Check if required tokens present</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sentence</strong> – </p></li>
+<li><p><strong>feature</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of valid tokens</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">is_dream</code><span class="sig-paren">(</span><em>feature=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Check if user input contains features of a dream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>feature</strong> – </p>
+</dd>
+<dt class="field-even">Return SpaCy Doc</dt>
+<dd class="field-even"><p>if user message contains dream features</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">is_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Check if user input contains their name</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">is_option</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Check if user input contains a pre-analysis option</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.SpacySetup.SpacySetup">
+<em class="property">class </em><code class="descclassname">Fralysis.SpacySetup.</code><code class="descname">SpacySetup</code><a class="headerlink" href="#Fralysis.SpacySetup.SpacySetup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up SpaCy’s nlp language pipeline</p>
+<dl class="method">
+<dt id="Fralysis.SpacySetup.SpacySetup.get_nlp">
+<code class="descname">get_nlp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.SpacySetup.SpacySetup.get_nlp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get nlp object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Fralysis.Therapist.Therapist">
+<em class="property">class </em><code class="descclassname">Fralysis.Therapist.</code><code class="descname">Therapist</code><span class="sig-paren">(</span><em>in_out: Fralysis.InputOutput.InputOutput</em><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Therapist.Therapist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to represent a therapist</p>
+<dl class="method">
+<dt id="Fralysis.Therapist.Therapist.finish_therapy">
+<code class="descname">finish_therapy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Therapist.Therapist.finish_therapy" title="Permalink to this definition">¶</a></dt>
+<dd><p>End therapy session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Fralysis.Therapist.Therapist.start_therapy">
+<code class="descname">start_therapy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Fralysis.Therapist.Therapist.start_therapy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start therapy session</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Fralysis</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Alex Hickes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

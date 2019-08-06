@@ -1,0 +1,22 @@
+GIT:
+git push https://"alex-hickes:5ekcihxela"@github.com/alex
+-hickes/dream_analysis
+
+
+Main:
+PS C:\Users\Mr Hickes\Desktop\dream_analysis\Full_Application> python -m Fralysis.GUI
+
+
+Pytest
+
+All:
+PS C:\Users\Mr Hickes\Desktop\dream_analysis\Full_Application> pytest
+
+With convnersation:
+PS C:\Users\Mr Hickes\Desktop\dream_analysis\Full_Application> pytest -s
+
+File:
+PS C:\Users\Mr Hickes\Desktop\dream_analysis\Full_Application> pytest Fralysis/test/test_therapist.py
+
+Single:
+PS C:\Users\Mr Hickes\Desktop\dream_analysis\Full_Application> pytest Fralysis/test -k test_smoking
